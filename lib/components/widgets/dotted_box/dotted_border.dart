@@ -1,7 +1,7 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:reusables/components/widgets/dotted_box/dash_path.dart';
+import 'package:binate_digital_reusable_widgets/components/widgets/dotted_box/dash_path.dart';
 
 part 'dash_painter.dart';
 

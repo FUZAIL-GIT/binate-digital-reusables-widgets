@@ -6,7 +6,7 @@ class AppToaster {
     String message, {
     ToastificationType type = ToastificationType.success,
     String subTitle = '',
-    Alignment alignment = Alignment.bottomRight,
+    Alignment alignment = Alignment.bottomCenter,
   }) {
     toastification.show(
       type: type,
@@ -22,19 +22,20 @@ class AppToaster {
           fontFamily: 'Poppins-Medium',
         ),
       ),
-      description: subTitle != ''
-          ? RichText(
-              text: TextSpan(
-                text: subTitle,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  fontFamily: 'Poppins',
+      description:
+          subTitle != ''
+              ? RichText(
+                text: TextSpan(
+                  text: subTitle,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    fontFamily: 'Poppins',
+                  ),
                 ),
-              ),
-            )
-          : null,
+              )
+              : null,
       direction: TextDirection.ltr,
       animationDuration: const Duration(milliseconds: 300),
       icon: _getIconByType(type),

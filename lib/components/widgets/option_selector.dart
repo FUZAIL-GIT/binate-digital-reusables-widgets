@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reusables/extensions/string_extension.dart';
+import 'package:binate_digital_reusable_widgets/extensions/string_extension.dart';
 
 class OptionSelector<T> extends StatelessWidget {
   final List<T> options;

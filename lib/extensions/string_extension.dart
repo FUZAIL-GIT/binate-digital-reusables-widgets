@@ -12,3 +12,9 @@ extension StringCapitalization on String {
     return '${this[0].toUpperCase()}${substring(1)}';
   }
 }
+
+extension SpacedWords on String {
+  String get spacedFromCamelCase {
+    return replaceAllMapped(RegExp(r'(?<=[a-z])(?=[A-Z])'), (match) => ' ');
+  }
+}

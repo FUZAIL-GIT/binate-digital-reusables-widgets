@@ -15,6 +15,7 @@ class PrimaryButton extends StatefulWidget {
   final Function? onDisabledTap;
   final IconAlignment? iconAlignment;
   final bool hapticFeedback;
+  final double fontSize;
 
   /// This button uses [TextTheme.labelMedium] for the text style.
   ///
@@ -37,6 +38,8 @@ class PrimaryButton extends StatefulWidget {
   /// The button has a default isExpanded of [true].
   ///
   /// The button has a default isDisabled of [false].
+  ///
+  /// The button has a default font size of [16].
   const PrimaryButton({
     super.key,
     required this.label,
@@ -52,6 +55,7 @@ class PrimaryButton extends StatefulWidget {
     this.iconAlignment,
     this.hapticFeedback = true,
     this.isExpanded = true,
+    this.fontSize = 16,
   });
 
   @override
@@ -118,6 +122,7 @@ class PrimaryButtonState extends State<PrimaryButton>
       widget.label,
       style: textTheme.labelMedium!.copyWith(
         color: widget.textColor ?? colorScheme.onPrimary,
+        fontSize: widget.fontSize,
       ),
     );
     return AnimatedOpacity(

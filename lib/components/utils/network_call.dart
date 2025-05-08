@@ -4,8 +4,8 @@ import 'dart:async';
 import 'dart:developer';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:reusables/components/utils/loading_indicator.dart';
-import 'package:reusables/components/utils/toastification.dart';
+import 'package:binate_digital_reusable_widgets/components/utils/loading_indicator.dart';
+import 'package:binate_digital_reusable_widgets/components/utils/toastification.dart';
 import 'package:toastification/toastification.dart';
 
 class NetworkCall<T> {

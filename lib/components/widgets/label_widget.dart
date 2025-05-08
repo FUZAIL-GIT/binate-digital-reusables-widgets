@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reusables/extensions/sizedbox_extension.dart';
+import 'package:binate_digital_reusable_widgets/extensions/sizedbox_extension.dart';
 
 class LabelWidget extends StatelessWidget {
   final String label;
